@@ -1,0 +1,11 @@
+course_id,course_name,course_category,credits
+BT101,Engineering Mathematics I,Foundation,4
+BT102,Programming in Python,core ,4
+BT103,Data Structures and Algorithms,Core,4
+BT104,Digital Electronics,Core,3
+BT105,Database Management Systems,Core,4
+BT106,Engineering Mechanics, foundation,3
+BT107,Computer Networks,Core,3
+BT108,Discrete Mathematics,Foundation,4
+BT109,Operating Systems,Core,4
+BT110,Data Analytics Fundamentals,ELECTIVE,3

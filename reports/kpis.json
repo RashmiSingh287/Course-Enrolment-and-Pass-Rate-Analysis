@@ -1,0 +1,380 @@
+{
+  "metadata": {
+    "passing_marks_threshold": 40,
+    "excluded_missing_invalid_results": 20,
+    "excluded_null_enrolment_dates_for_monthly_trend": 3
+  },
+  "overall_kpis": {
+    "total_students": 250,
+    "total_courses": 10,
+    "total_enrolments": 1337,
+    "valid_graded_enrolments": 1317,
+    "passed_enrolments": 1156,
+    "failed_enrolments": 161,
+    "overall_pass_rate": 87.78,
+    "overall_fail_rate": 12.22,
+    "average_marks": 60.94
+  },
+  "result_distribution": {
+    "Pass": 1156,
+    "Fail": 161,
+    "Missing/Invalid": 20
+  },
+  "academic_year_enrolment": [
+    {
+      "academic_year": "2023-24",
+      "enrolment_count": 517
+    },
+    {
+      "academic_year": "2024-25",
+      "enrolment_count": 820
+    }
+  ],
+  "course_wise_enrolment_count": [
+    {
+      "course_id": "BT102",
+      "course_name": "Programming in Python",
+      "enrolment_count": 182
+    },
+    {
+      "course_id": "BT101",
+      "course_name": "Engineering Mathematics I",
+      "enrolment_count": 160
+    },
+    {
+      "course_id": "BT103",
+      "course_name": "Data Structures and Algorithms",
+      "enrolment_count": 154
+    },
+    {
+      "course_id": "BT105",
+      "course_name": "Database Management Systems",
+      "enrolment_count": 152
+    },
+    {
+      "course_id": "BT104",
+      "course_name": "Digital Electronics",
+      "enrolment_count": 129
+    },
+    {
+      "course_id": "BT107",
+      "course_name": "Computer Networks",
+      "enrolment_count": 122
+    },
+    {
+      "course_id": "BT108",
+      "course_name": "Discrete Mathematics",
+      "enrolment_count": 122
+    },
+    {
+      "course_id": "BT106",
+      "course_name": "Engineering Mechanics",
+      "enrolment_count": 114
+    },
+    {
+      "course_id": "BT109",
+      "course_name": "Operating Systems",
+      "enrolment_count": 111
+    },
+    {
+      "course_id": "BT110",
+      "course_name": "Data Analytics Fundamentals",
+      "enrolment_count": 91
+    }
+  ],
+  "course_wise_pass_rate": [
+    {
+      "course_id": "BT110",
+      "course_name": "Data Analytics Fundamentals",
+      "valid_enrolments": 91,
+      "pass_count": 91,
+      "pass_rate": 100.0,
+      "average_marks": 77.46
+    },
+    {
+      "course_id": "BT102",
+      "course_name": "Programming in Python",
+      "valid_enrolments": 181,
+      "pass_count": 177,
+      "pass_rate": 97.79,
+      "average_marks": 72.84
+    },
+    {
+      "course_id": "BT107",
+      "course_name": "Computer Networks",
+      "valid_enrolments": 119,
+      "pass_count": 114,
+      "pass_rate": 95.8,
+      "average_marks": 63.75
+    },
+    {
+      "course_id": "BT105",
+      "course_name": "Database Management Systems",
+      "valid_enrolments": 150,
+      "pass_count": 143,
+      "pass_rate": 95.33,
+      "average_marks": 65.99
+    },
+    {
+      "course_id": "BT101",
+      "course_name": "Engineering Mathematics I",
+      "valid_enrolments": 155,
+      "pass_count": 147,
+      "pass_rate": 94.84,
+      "average_marks": 62.8
+    },
+    {
+      "course_id": "BT104",
+      "course_name": "Digital Electronics",
+      "valid_enrolments": 128,
+      "pass_count": 113,
+      "pass_rate": 88.28,
+      "average_marks": 58.01
+    },
+    {
+      "course_id": "BT109",
+      "course_name": "Operating Systems",
+      "valid_enrolments": 107,
+      "pass_count": 94,
+      "pass_rate": 87.85,
+      "average_marks": 58.36
+    },
+    {
+      "course_id": "BT103",
+      "course_name": "Data Structures and Algorithms",
+      "valid_enrolments": 151,
+      "pass_count": 118,
+      "pass_rate": 78.15,
+      "average_marks": 55.13
+    },
+    {
+      "course_id": "BT106",
+      "course_name": "Engineering Mechanics",
+      "valid_enrolments": 114,
+      "pass_count": 79,
+      "pass_rate": 69.3,
+      "average_marks": 47.32
+    },
+    {
+      "course_id": "BT108",
+      "course_name": "Discrete Mathematics",
+      "valid_enrolments": 121,
+      "pass_count": 80,
+      "pass_rate": 66.12,
+      "average_marks": 44.8
+    }
+  ],
+  "failure_count_by_course": [
+    {
+      "course_id": "BT108",
+      "course_name": "Discrete Mathematics",
+      "valid_enrolments": 121,
+      "fail_count": 41,
+      "fail_rate": 33.88
+    },
+    {
+      "course_id": "BT106",
+      "course_name": "Engineering Mechanics",
+      "valid_enrolments": 114,
+      "fail_count": 35,
+      "fail_rate": 30.7
+    },
+    {
+      "course_id": "BT103",
+      "course_name": "Data Structures and Algorithms",
+      "valid_enrolments": 151,
+      "fail_count": 33,
+      "fail_rate": 21.85
+    },
+    {
+      "course_id": "BT104",
+      "course_name": "Digital Electronics",
+      "valid_enrolments": 128,
+      "fail_count": 15,
+      "fail_rate": 11.72
+    },
+    {
+      "course_id": "BT109",
+      "course_name": "Operating Systems",
+      "valid_enrolments": 107,
+      "fail_count": 13,
+      "fail_rate": 12.15
+    },
+    {
+      "course_id": "BT101",
+      "course_name": "Engineering Mathematics I",
+      "valid_enrolments": 155,
+      "fail_count": 8,
+      "fail_rate": 5.16
+    },
+    {
+      "course_id": "BT105",
+      "course_name": "Database Management Systems",
+      "valid_enrolments": 150,
+      "fail_count": 7,
+      "fail_rate": 4.67
+    },
+    {
+      "course_id": "BT107",
+      "course_name": "Computer Networks",
+      "valid_enrolments": 119,
+      "fail_count": 5,
+      "fail_rate": 4.2
+    },
+    {
+      "course_id": "BT102",
+      "course_name": "Programming in Python",
+      "valid_enrolments": 181,
+      "fail_count": 4,
+      "fail_rate": 2.21
+    },
+    {
+      "course_id": "BT110",
+      "course_name": "Data Analytics Fundamentals",
+      "valid_enrolments": 91,
+      "fail_count": 0,
+      "fail_rate": 0.0
+    }
+  ],
+  "semester_wise_pass_rate": [
+    {
+      "semester": 1,
+      "enrolment_count": 413,
+      "valid_enrolments": 406,
+      "pass_count": 355,
+      "fail_count": 51,
+      "average_marks": 61.04,
+      "pass_rate": 87.44,
+      "fail_rate": 12.56
+    },
+    {
+      "semester": 2,
+      "enrolment_count": 407,
+      "valid_enrolments": 401,
+      "pass_count": 355,
+      "fail_count": 46,
+      "average_marks": 61.21,
+      "pass_rate": 88.53,
+      "fail_rate": 11.47
+    },
+    {
+      "semester": 3,
+      "enrolment_count": 256,
+      "valid_enrolments": 254,
+      "pass_count": 219,
+      "fail_count": 35,
+      "average_marks": 59.07,
+      "pass_rate": 86.22,
+      "fail_rate": 13.78
+    },
+    {
+      "semester": 4,
+      "enrolment_count": 261,
+      "valid_enrolments": 256,
+      "pass_count": 227,
+      "fail_count": 29,
+      "average_marks": 62.23,
+      "pass_rate": 88.67,
+      "fail_rate": 11.33
+    }
+  ],
+  "department_wise_summary": [
+    {
+      "department": "CSE",
+      "unique_students": 86,
+      "enrolment_count": 468,
+      "valid_enrolments": 460,
+      "pass_count": 404,
+      "fail_count": 56,
+      "average_marks": 61.33,
+      "pass_rate": 87.83,
+      "fail_rate": 12.17
+    },
+    {
+      "department": "IT",
+      "unique_students": 46,
+      "enrolment_count": 271,
+      "valid_enrolments": 267,
+      "pass_count": 233,
+      "fail_count": 34,
+      "average_marks": 59.92,
+      "pass_rate": 87.27,
+      "fail_rate": 12.73
+    },
+    {
+      "department": "ME",
+      "unique_students": 49,
+      "enrolment_count": 243,
+      "valid_enrolments": 240,
+      "pass_count": 207,
+      "fail_count": 33,
+      "average_marks": 60.82,
+      "pass_rate": 86.25,
+      "fail_rate": 13.75
+    },
+    {
+      "department": "ECE",
+      "unique_students": 42,
+      "enrolment_count": 220,
+      "valid_enrolments": 217,
+      "pass_count": 189,
+      "fail_count": 28,
+      "average_marks": 61.0,
+      "pass_rate": 87.1,
+      "fail_rate": 12.9
+    },
+    {
+      "department": "CE",
+      "unique_students": 27,
+      "enrolment_count": 135,
+      "valid_enrolments": 133,
+      "pass_count": 123,
+      "fail_count": 10,
+      "average_marks": 61.77,
+      "pass_rate": 92.48,
+      "fail_rate": 7.52
+    }
+  ],
+  "monthly_enrolment_trend": [
+    {
+      "year_month": "2023-08",
+      "enrolment_count": 204
+    },
+    {
+      "year_month": "2023-09",
+      "enrolment_count": 55
+    },
+    {
+      "year_month": "2024-01",
+      "enrolment_count": 156
+    },
+    {
+      "year_month": "2024-02",
+      "enrolment_count": 102
+    },
+    {
+      "year_month": "2024-08",
+      "enrolment_count": 317
+    },
+    {
+      "year_month": "2024-09",
+      "enrolment_count": 92
+    },
+    {
+      "year_month": "2025-01",
+      "enrolment_count": 274
+    },
+    {
+      "year_month": "2025-02",
+      "enrolment_count": 134
+    }
+  ],
+  "attendance_vs_marks": {
+    "valid_attendance_count": 1327,
+    "paired_attendance_marks_count": 1307,
+    "average_attendance_all": 77.8,
+    "average_attendance_pass": 79.73,
+    "average_attendance_fail": 64.32,
+    "pearson_correlation_attendance_marks": 0.7539
+  }
+}

@@ -1,0 +1,33 @@
+issue,rule_applied,rows_affected
+Exact duplicate student rows,Removed exact duplicate rows across all columns (keep='first'),5
+Duplicate student_id primary keys (non-exact),Removed remaining duplicate student_id rows after exact deduplication (keep='first'),0
+Inconsistent student_name formatting,Trimmed leading/trailing whitespace and converted student_name to Title Case,3
+Missing gender values in students,Replaced missing gender values with 'Unknown' (no rows deleted),5
+Inconsistent gender text formats,"Trimmed spaces and mapped variants (m/male -> Male, f/female -> Female)",5
+Inconsistent department text formats,"Trimmed spaces and converted department codes to uppercase (CSE, IT, ECE, ME, CE)",5
+"Invalid department codes (outside CSE, IT, ECE, ME, CE)",Validated department against allowed codes without deleting rows,0
+Missing required fields in students,"Checked required columns (student_id, student_name, department) without deleting rows; per-column counts: {'student_id': 0, 'student_name': 0, 'department': 0}",0
+Missing admission_year in students (inferred),Detected 2 originally missing admission_year value(s); inferred 2 from Semester 1 academic_year,2
+"Invalid admission_year values (outside {2023, 2024})","Validated admission_year strictly against {2023, 2024}; set non-numeric, non-integer, and out-of-set values to pd.NA (non_numeric=0, non_integer=0, out_of_set=0)",0
+Exact duplicate course rows,Checked and removed exact duplicate rows in courses (keep='first'),0
+Duplicate course_id primary keys (non-exact),Checked and removed remaining duplicate course_id keys (keep='first'),0
+Inconsistent course_category formatting,"Trimmed spaces and converted course_category to Title Case (Foundation, Core, Elective)",3
+Invalid course_category values,"Validated course_category against {Foundation, Core, Elective} without deleting rows",0
+"Missing or invalid course credits (outside {3, 4})","Validated credits strictly against {3, 4} and cast to nullable Int64 (invalid/missing set to null); missing=0, non_numeric=0, outside_set=0",0
+Missing required fields in courses,"Checked required columns (course_id, course_name, course_category, credits) without deleting rows; per-column counts: {'course_id': 0, 'course_name': 0, 'course_category': 0, 'credits': 0}",0
+Exact duplicate enrolment rows,Removed exact duplicate rows across all columns (keep='first'),10
+Duplicate enrolment_id primary keys (non-exact),Removed remaining duplicate enrolment_id rows after exact deduplication (keep='first'),0
+Non-numeric semester text format (e.g. 'Sem 1'),Extracted integer semester (1-4) from valid text labels and cast to Int64,6
+Missing or invalid semester values (outside 1-4),"Set invalid/out-of-range semester values to nullable Int64 null without deleting rows; missing=0, invalid=0",0
+"Missing or invalid academic_year (outside 2023-24, 2024-25)","Validated academic_year against {2023-24, 2024-25} without silently deleting records; missing=0, invalid=0",0
+Missing required key/period fields in enrolments,"Checked required columns (enrolment_id, student_id, course_id, semester, academic_year) without deleting rows; per-column counts: {'enrolment_id': 0, 'student_id': 0, 'course_id': 0, 'semester': 0, 'academic_year': 0}",0
+Missing enrolment_date values,Retained missing enrolment_date as null without deleting rows,0
+Mixed valid enrolment_date formats standardised,"Parsed DD/MM/YYYY, DD-Mon-YYYY, and YYYY/MM/DD dates into ISO YYYY-MM-DD",21
+Invalid / unparseable enrolment_date values,Set invalid non-empty dates (e.g. '2024-13-45') to null without deleting rows,3
+Missing marks values,Retained missing marks as null (NA); excluded from average/pass-rate denominators,12
+Invalid out-of-range or non-numeric marks (outside 0-100),"Converted non-numeric or out-of-range marks (<0 or >100) to null without deleting rows; non_numeric=0, out_of_range=8",8
+Missing attendance_percentage values,Retained missing attendance_percentage as null without deleting rows,10
+Missing result values in raw data,Recalculated result from valid marks or labelled 'Missing/Invalid' when marks unavailable,8
+Inconsistent or recalculated result values,"Standardised text and enforced marks >= 40 -> Pass, < 40 -> Fail, unavailable -> Missing/Invalid",32
+Referential integrity check: student_id,Verified all non-null enrolments.student_id exist in cleaned students.student_id,0
+Referential integrity check: course_id,Verified all non-null enrolments.course_id exist in cleaned courses.course_id,0
